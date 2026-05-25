@@ -1,0 +1,8 @@
+{
+  "name": "Habib Zainal Portfolio",
+  "description": "Minimalist Dark Mode Portfolio with Spotlight Profile",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
