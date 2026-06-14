@@ -310,97 +310,77 @@ export default function ContactForm() {
 
         {/* Quick connect details list */}
         <div className="space-y-3">
-          <div className="flex items-center gap-3.5 p-4 rounded-xl bg-slate-800/15 border border-slate-800/40 hover:border-slate-800 transition-colors">
-            <a 
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=habibzainal161@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="h-10 w-10 rounded-lg bg-orange-500/5 border border-orange-500/15 flex items-center justify-center text-amber-500 hover:bg-amber-500/15 hover:border-amber-500/40 transition-colors cursor-pointer"
-              title="Kirim Email"
-            >
+          <a 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=habibzainal161@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3.5 p-4 rounded-xl bg-slate-800/15 border border-slate-800/40 hover:border-slate-800 hover:bg-slate-800/25 transition-all group cursor-pointer decoration-transparent focus:outline-none"
+            title="Kirim Email"
+          >
+            <div className="h-10 w-10 min-w-10 rounded-lg bg-orange-500/5 border border-orange-500/15 flex items-center justify-center text-amber-500 group-hover:bg-amber-500/15 group-hover:border-amber-500/40 transition-colors">
               <Mail className="h-5 w-5" />
-            </a>
+            </div>
             <div>
-              <span className="text-[10px] uppercase font-mono tracking-widest text-slate-500 block">EMAIL RESMI</span>
-              <a 
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=habibzainal161@gmail.com" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs hover:text-amber-400 text-slate-200 font-medium transition-colors"
-              >
+              <span className="text-[10px] uppercase font-mono tracking-widest text-slate-500 block relative">EMAIL RESMI</span>
+              <span className="text-xs text-slate-200 font-medium group-hover:text-amber-400 transition-colors relative block">
                 habibzainal161@gmail.com
-              </a>
+              </span>
             </div>
-          </div>
+          </a>
 
-          <div className="flex items-center gap-3.5 p-4 rounded-xl bg-slate-800/15 border border-slate-800/40 hover:border-slate-800 transition-colors">
-            <a 
-              href="https://wa.me/6285706514201" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="h-10 w-10 rounded-lg bg-orange-500/5 border border-orange-500/15 flex items-center justify-center text-amber-500 hover:bg-amber-500/15 hover:border-amber-500/40 transition-colors cursor-pointer"
-              title="Chat WhatsApp"
-            >
+          <a 
+            href="https://wa.me/6285706514201" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3.5 p-4 rounded-xl bg-slate-800/15 border border-slate-800/40 hover:border-slate-800 hover:bg-slate-800/25 transition-all group cursor-pointer decoration-transparent focus:outline-none"
+            title="Chat WhatsApp"
+          >
+            <div className="h-10 w-10 min-w-10 rounded-lg bg-orange-500/5 border border-orange-500/15 flex items-center justify-center text-amber-500 group-hover:bg-amber-500/15 group-hover:border-amber-500/40 transition-colors">
               <img src="https://res.cloudinary.com/dopwo368m/image/upload/v1779698662/whatsapp_ptyxrv.png" alt="WhatsApp" className="h-5 w-5 object-contain" style={{ filter: "brightness(0) saturate(100%) invert(69%) sepia(45%) saturate(3058%) hue-rotate(352deg) brightness(101%) contrast(93%)" }} />
-            </a>
+            </div>
             <div>
-              <span className="text-[10px] uppercase font-mono tracking-widest text-slate-500 block">WHATSAPP CHAT</span>
-              <a 
-                href="https://wa.me/6285706514201" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs hover:text-amber-400 text-slate-200 font-medium transition-colors"
-              >
+              <span className="text-[10px] uppercase font-mono tracking-widest text-slate-500 block relative">WHATSAPP CHAT</span>
+              <span className="text-xs text-slate-200 font-medium group-hover:text-amber-400 transition-colors relative block">
                 0857-0651-4201
-              </a>
+              </span>
             </div>
-          </div>
+          </a>
 
-          <div className="flex items-center gap-3.5 p-4 rounded-xl bg-slate-800/15 border border-slate-800/40 hover:border-slate-800 transition-colors">
-            <a 
-              href="https://instagram.com/habibzm_" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="h-10 w-10 rounded-lg bg-orange-500/5 border border-orange-500/15 flex items-center justify-center text-amber-500 hover:bg-amber-500/15 hover:border-amber-500/40 transition-colors cursor-pointer"
-              title="Follow Instagram"
-            >
+          <a 
+            href="https://instagram.com/habibzm_" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3.5 p-4 rounded-xl bg-slate-800/15 border border-slate-800/40 hover:border-slate-800 hover:bg-slate-800/25 transition-all group cursor-pointer decoration-transparent focus:outline-none"
+            title="Follow Instagram"
+          >
+            <div className="h-10 w-10 min-w-10 rounded-lg bg-orange-500/5 border border-orange-500/15 flex items-center justify-center text-amber-500 group-hover:bg-amber-500/15 group-hover:border-amber-500/40 transition-colors">
               <Instagram className="h-5 w-5" />
-            </a>
+            </div>
             <div>
-              <span className="text-[10px] uppercase font-mono tracking-widest text-slate-500 block">INSTAGRAM</span>
-              <a 
-                href="https://instagram.com/habibzm_" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs hover:text-amber-400 text-slate-200 font-medium transition-colors"
-              >
+              <span className="text-[10px] uppercase font-mono tracking-widest text-slate-500 block relative">INSTAGRAM</span>
+              <span className="text-xs text-slate-200 font-medium group-hover:text-amber-400 transition-colors relative block">
                 @habibzm_
-              </a>
+              </span>
             </div>
-          </div>
+          </a>
 
-          <div className="flex items-center gap-3.5 p-4 rounded-xl bg-[#08061a]/40 border border-slate-800/40 hover:border-slate-800 transition-colors">
-            <a 
-              href="https://www.tiktok.com/@habibzm13" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="h-10 w-10 rounded-lg bg-orange-500/5 border border-orange-500/15 flex items-center justify-center text-amber-500 hover:bg-amber-500/15 hover:border-amber-500/40 transition-colors cursor-pointer"
-              title="Kunjungi TikTok"
-            >
+          <a 
+            href="https://www.tiktok.com/@habibzm13" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3.5 p-4 rounded-xl bg-[#08061a]/40 border border-slate-800/40 hover:border-slate-800 hover:bg-[#08061a]/60 transition-all group cursor-pointer decoration-transparent focus:outline-none"
+            title="Kunjungi TikTok"
+          >
+            <div className="h-10 w-10 min-w-10 rounded-lg bg-orange-500/5 border border-orange-500/15 flex items-center justify-center text-amber-500 group-hover:bg-amber-500/15 group-hover:border-amber-500/40 transition-colors">
               <img src="https://res.cloudinary.com/dopwo368m/image/upload/v1779698662/tik-tok_nxvfqu.png" alt="TikTok" className="h-5 w-5 object-contain" style={{ filter: "brightness(0) saturate(100%) invert(69%) sepia(45%) saturate(3058%) hue-rotate(352deg) brightness(101%) contrast(93%)" }} />
-            </a>
-            <div>
-              <span className="text-[10px] uppercase font-mono tracking-widest text-slate-500 block">TIKTOK CHANNEL</span>
-              <a 
-                href="https://www.tiktok.com/@habibzm13" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs hover:text-amber-400 text-slate-200 font-medium transition-colors"
-              >
-                @habibzm13
-              </a>
             </div>
-          </div>
+            <div>
+              <span className="text-[10px] uppercase font-mono tracking-widest text-slate-500 block relative">TIKTOK CHANNEL</span>
+              <span className="text-xs text-slate-200 font-medium group-hover:text-amber-400 transition-colors relative block">
+                @habibzm13
+              </span>
+            </div>
+          </a>
         </div>
 
       </motion.div>
