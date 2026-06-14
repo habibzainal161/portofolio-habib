@@ -238,7 +238,7 @@ export default function App() {
                         </h3>
                         <div className="space-y-1 sm:pl-1 flex flex-col items-center sm:items-start">
                           <div className="text-[10px] font-mono text-slate-450 uppercase tracking-widest font-bold">
-                            2020 - 2024
+                            2019 - 2024
                           </div>
                           <div className="text-xs font-semibold text-slate-200 leading-tight">
                             Universitas PGRI Madiun
