@@ -168,13 +168,29 @@ export default function ProjectShowcase() {
                     </div>
                   )}
 
-                  {/* Overlay Action Button */}
-                  <div className="absolute inset-0 bg-slate-950/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 z-20">
-                    <button
-                      onClick={() => handleOpenProject(project)}
-                      className="px-4 py-2 rounded-xl bg-amber-500 text-slate-950 text-xs font-semibold cursor-pointer shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 flex items-center gap-1.5"
+                  {/* Permanent Hint / Mobile Indicator */}
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20 md:hidden">
+                    <motion.div 
+                      animate={{ scale: [1, 1.05, 1], boxShadow: ["0px 0px 0px rgba(245,158,11,0)", "0px 0px 15px rgba(245,158,11,0.2)", "0px 0px 0px rgba(245,158,11,0)"] }}
+                      transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                      className="bg-slate-900/90 backdrop-blur-md border border-amber-500/50 shadow-2xl flex items-center gap-2.5 px-4 py-2.5 rounded-full"
                     >
-                      <Grid className="h-3.5 w-3.5" /> Buka Galeri
+                      <div className="bg-amber-500/20 p-1 rounded-full flex items-center justify-center">
+                        <Grid className="h-4 w-4 text-amber-500" />
+                      </div>
+                      <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest mt-0.5">Tap Buka Galeri</span>
+                    </motion.div>
+                  </div>
+
+                  {/* Overlay Action Button (Clickable Area) */}
+                  <div 
+                    onClick={() => handleOpenProject(project)}
+                    className="absolute inset-0 bg-transparent hover:bg-slate-950/20 md:hover:bg-slate-950/80 transition-colors duration-300 flex items-center justify-center z-20 cursor-pointer group/btn"
+                  >
+                    <button
+                      className="hidden md:flex px-4 py-2 rounded-xl bg-amber-500 text-slate-950 text-xs font-semibold shadow-lg transition-all duration-200 items-center gap-1.5 pointer-events-none opacity-0 group-hover/btn:opacity-100 group-hover/btn:scale-105"
+                    >
+                      <Grid className="h-3.5 w-3.5" /> Klik untuk Buka Galeri
                     </button>
                   </div>
                 </div>
